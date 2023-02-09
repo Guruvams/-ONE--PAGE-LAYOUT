@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update@Rating</title>
+<style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            background-color:black;
+        }
+        legend,label{
+            color: blueviolet;
+        }
+        .div1{
+            width: 30%;
+            margin-left: 530px;
+            margin-top: 200px;
+        }
+        fieldset{
+            height: 210px;
+            border-radius: 20px;
+        }
+        .input1{
+            width: 60%;
+            margin-top: 30px;
+            height: 20%;
+            border: 2px lightslategray solid;
+            border-radius: 4px;
+            color: white;
+        }
+        .input1:hover{
+            background-color: black;
+            color: white;
+        }
+        .button{
+            margin-left: 200px;
+            color: white;
+            border: 2px white solid;
+            margin-top: 20px;
+            padding: 7px;
+            border-radius: 10px;
+        }
+        .button:hover{
+            background-color: darkgreen;
+            
+        }
+        .inp{
+            border: 2px lightslategray solid;
+            border-radius: 12px;
+            padding-left: 10px;
+            height: 30px;
+            width: 58%;
+            color: white;
+            margin-left: 20px;
+        }
+ </style>
+</head>
+<body>
+	<form action="update" method="post">
+        <div class="div1">
+            <fieldset>
+                <legend>Enter valid mobileNumber</legend>
+                <label for="">Phone number : </label>
+                <input type="number" name="mobilenumber" required="required" placeholder="Enter students-mobilenumber" class="input1">
+                <br>
+                <br>
+                <label for="">Percentage : </label>
+                <input type="number" name="percentage" required="required" placeholder="Rating(percentage)" class="inp">
+                <br>
+                <input type="submit" value="update-now" class="button">
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>
