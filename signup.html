@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Mock-App@Signup</title>
+<style>
+        body{
+            background-color: black;
+        }
+        legend{
+            color:rebeccapurple;
+        }
+        form{
+            width: 33%;
+            margin-left: 520px;
+            margin-top: 90px;
+        }
+        label{
+            padding-left: 80px;
+            font-family: 'Courier New', Courier, monospace;
+            color:rebeccapurple;
+        }
+        .button{
+            margin-left: 220px;
+            padding: 7px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 2px black solid;
+            border-radius: 10px;
+        }
+        .button:hover{
+            background-color: darkgreen;
+            color:white;
+        }
+        fieldset{
+            height: 440px;
+        }
+        .input{
+            margin-top: 23px;
+            border: 2px darkgreen solid;
+            height: 30px;
+            margin-left: 26px;
+            border-radius: 9px;
+        }
+        .input:hover{
+            background-color: black;
+            color: white;
+        }
+        .input1{
+            border: 2px darkgreen solid;
+            height: 30px;
+            margin-left: 27px;
+            border-radius: 9px;
+        }
+        .input1:hover{
+            background-color: black;
+            color: white;
+        }
+        .input2{
+            border: 2px darkgreen solid;
+            height: 30px;
+            margin-left: 19px;
+            border-radius: 9px;
+        }
+        .input2:hover{
+            background-color: black;
+            color: white;
+        }
+        .input3{
+            border: 2px darkgreen solid;
+            height: 30px;
+            margin-left: 45px;
+            border-radius: 9px;
+        }
+        .input3:hover{
+            background-color: black;
+            color: white;
+        }
+        .lab{
+            padding-left: 70px;
+        }
+        .lab1{
+            padding-left: 90px;
+        }
+        .para{
+            color: beige;
+            margin-left: 200px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+        }
+        h1{
+            color: antiquewhite;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        .para1{
+            color: antiquewhite;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        .gen{
+            display: inline;
+            color: antiquewhite;
+        }
+        .geninp{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+	    <h1>Sign-up Here</h1>
+    <p class="para1">for Only Trainers</p>
+    <form action="signup" method="post">
+        <fieldset>
+            <legend>Sign-up</legend>
+            <label for="">FullName</label>
+            <input type="text" name="fullname" required="required" placeholder="Enter fullname" class="input">
+            <br>
+            <br>
+            <label for="">username</label>
+            <input type="text" name="username" required="required" placeholder="create user-name" class="input1">
+            <br>
+            <br>
+            <label for="">password</label>
+            <input type="password" name="password" required="required" placeholder="create pass-word" class="input1">
+            <br>
+            <br>
+            <label for="" class="lab">c-password</label>
+            <input type="text" name="confirmpassword" required="required" placeholder="confirm pass-word" class="input2">
+            <br>
+            <br>
+            <label for="">Gender</label>
+            <input type="radio" name="gender" required="required" value="male" class="geninp"><p for="" class="gen">Male</p><input type="radio" name="gender" required="required" value="female"><p for=""  class="gen">Female</p>
+            <br>
+            <br>
+            <label for="" class="lab1">Email</label>
+            <input type="email" name="email" required="required" placeholder="Enter email" class="input3">
+            <br>
+            <br>
+            <input type="submit" value="Sign-up" class="button">
+            <p class="para">Existing user?<a href="./login.html">login</a></p>
+        </fieldset>
+    </form>
+</body>
+</html>
