@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Mock-App</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>InsertServlet</servlet-name>
+  <servlet-class>com.QSP.Login.InsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>InsertServlet</servlet-name>
+  <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>UpdateServlet</servlet-name>
+  <servlet-class>com.QSP.Login.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateServlet</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AddStudentServlet</servlet-name>
+  <servlet-class>com.QSP.Login.AddStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddStudentServlet</servlet-name>
+  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MainServlet</servlet-name>
+  	<servlet-class>com.QSP.Login.MainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MainServlet</servlet-name>
+  <url-pattern>/main1</url-pattern>
+  </servlet-mapping>
+  
+  
+
+  <servlet>
+  	<servlet-name>BetweenLoginAndSignServlet</servlet-name>
+  	<servlet-class>com.QSP.Login.BetweenLoginAndSignServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BetweenLoginAndSignServlet</servlet-name>
+  <url-pattern>/Between</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  
+  <servlet>
+  	<servlet-name>SignupServlet</servlet-name>
+  	<servlet-class>com.QSP.Login.SignupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SignupServlet</servlet-name>
+  <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.QSP.Login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+</web-app>
