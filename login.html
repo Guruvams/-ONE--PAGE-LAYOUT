@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MockApp.com</title>
+<style>
+        body{
+            background-color: black;
+        }
+        legend{
+            color:rebeccapurple;
+        }
+        form{
+            width: 33%;
+            margin-left: 520px;
+            margin-top: 140px;
+        }
+        label{
+            padding-left: 80px;
+            font-family: 'Courier New', Courier, monospace;
+            color:rebeccapurple;
+        }
+        .button{
+            margin-left: 220px;
+            padding: 7px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 2px black solid;
+            border-radius: 10px;
+        }
+        .button:hover{
+            background-color: darkgreen;
+            color:white;
+        }
+        fieldset{
+            height: 230px;
+        }
+        .input{
+            margin-top: 23px;
+            border: 2px darkgreen solid;
+            height: 30px;
+            margin-left: 20px;
+            border-radius: 9px;
+        }
+        .input:hover{
+            background-color: black;
+            color: white;
+        }
+        .input1{
+            border: 2px darkgreen solid;
+            height: 30px;
+            margin-left: 20px;
+            border-radius: 9px;
+        }
+        .input1:hover{
+            background-color: black;
+            color: white;
+        }
+        .para{
+            color: beige;
+            margin-left: 200px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+        }
+        h1{
+            color: antiquewhite;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        .para1{
+            color: antiquewhite;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+	<h1>Mock-App</h1>
+    <p class="para1">for students & Trainers</p>
+    <form action="login" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="">username</label>
+            <input type="text" name="username" required="required" placeholder="Enter username" class="input">
+            <br>
+            <br>
+            <label for="">password</label>
+            <input type="password" name="password" required="required" placeholder="Enter password" class="input1">
+            <br>
+            <br>
+            <input type="submit" value="Login" class="button">
+            <p class="para">New user?<a href="./signup.html">Sign up</a></p>
+        </fieldset>	
+    </form>
+</body>
+</html>
