@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Main-Mock-App</title>
+</head>
+<body>
+	<style>
+        .sub{
+            display: inline;
+            color: antiquewhite;
+        }
+        body{
+            font-family:'Courier New', Courier, monospace;
+            background-color: black;
+        }
+        form{
+            width: 33%;
+            margin-left: 520px;
+            margin-top: 90px;
+            padding-top: 10px;
+        }
+        .hed{
+            text-align: center;
+            color: antiquewhite;
+        }
+        legend,label{
+            color: rebeccapurple;
+            
+        }
+        .inp1{
+            margin-left: 90px;
+            border: 2px darkgreen solid;
+            width: 40%;
+            border-radius: 7px;
+            height: 30px;
+            margin-top: 20px;
+        }
+        .inp1:hover{
+            background-color: black;
+            color: white;
+        }
+        .inp2{
+            margin-left: 20px;
+            width: 40%;
+            border: 2px darkgreen solid;
+            height: 30px;
+            border-radius: 7px;
+        }
+        .inp2:hover{
+            background-color: black;
+            color: white;
+        }
+        .cal{
+            margin-left: 17px;
+            
+        }
+        .inp3{
+            margin-left: 58px;
+        }
+        .inp4{
+            margin-left: 180px;
+        }
+        .inp5{
+            margin-left: 80px;
+            width: 40%;
+            border: 2px darkgreen solid;
+            height: 30px;
+            border-radius: 7px;
+        }
+        .inp5:hover{
+            background-color: black;
+            color: white;
+        }
+        .button{
+            margin-left: 200px;
+            padding: 7px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 2px black solid;
+            border-radius: 10px;
+        }
+        .button:hover{
+            background-color: darkgreen;
+            color:white;
+        }
+    </style>
+</body>
+	<h1 class="hed">welcome to Mock session Rate your Students</h1>
+    <form action="add" method="post">
+        <fieldset>
+            <legend>Enter Students details here</legend>
+            <label for="" class="cal">Name : </label>
+            <input type="text" name="name" placeholder="Enter Student-name" required="required" class="inp1">
+            <br>
+            <br>
+            <label for="">Mobile Number : </label>
+            <input type="number" name="mobilenumber" placeholder="Enter student-mobilenumber" required="required" class="inp2">
+            <br>
+            <br>
+            <label for="" class="cal">Email : </label>
+            <input type="email" name="email" required="required" placeholder="Enter-students Email" class="inp5">
+            <br>
+            <br>
+            <input type="submit" value="update-now" class="button">
+        </fieldset>
+    </form>
+</html>
