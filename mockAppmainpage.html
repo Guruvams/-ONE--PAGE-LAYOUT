@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="ISO-8859-1">
-<title>Main-Mock-App</title>
-</head>
-<body>
-	<style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main-Mock-App</title>
+    <style>
         .sub{
             display: inline;
             color: antiquewhite;
@@ -72,6 +72,17 @@
             background-color: black;
             color: white;
         }
+        .inp{
+            margin-left: 50px;
+            width: 40%;
+            border: 2px darkgreen solid;
+            height: 30px;
+            border-radius: 7px;
+        }
+        .inp:hover{
+            background-color: black;
+            color: white;
+        }
         .button{
             margin-left: 200px;
             padding: 7px;
@@ -85,8 +96,9 @@
             color:white;
         }
     </style>
-</body>
-	<h1 class="hed">welcome to Mock session Rate your Students</h1>
+</head>
+<body>
+    <h1 class="hed">welcome to Mock session Rate your Students</h1>
     <form action="add" method="post">
         <fieldset>
             <legend>Enter Students details here</legend>
@@ -102,7 +114,12 @@
             <input type="email" name="email" required="required" placeholder="Enter-students Email" class="inp5">
             <br>
             <br>
+            <label for="">Percentage : </label>
+            <input type="number" name="percentage" required="required" placeholder="Rating(percentage)" class="inp">
+            <br>
+            <br>
             <input type="submit" value="update-now" class="button">
         </fieldset>
     </form>
+</body>
 </html>
