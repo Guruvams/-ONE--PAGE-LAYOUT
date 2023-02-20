@@ -21,6 +21,7 @@ public class AddStudentServlet extends HttpServlet
 		String name=req.getParameter("name");
 		String mobilenumber=req.getParameter("mobilenumber");
 		String email=req.getParameter("email");
+		String per=req.getParameter("percentage");
 		Connection con=null;
 		PreparedStatement pstmt=null;
 		try {
@@ -34,7 +35,23 @@ public class AddStudentServlet extends HttpServlet
 			pstmt.setString(2, mobilenumber);
 			pstmt.setString(3, email);
 			pstmt.executeUpdate();
-			out.print("Student Added");
+			Connection con1=null;
+			PreparedStatement pstmt1=null;
+			try {
+				Class.forName("com.mysql.jdbc.Driver");
+				String dburl1="jdbc:mysql://localhost:3306/j2ee_db";
+				
+				con1=DriverManager.getConnection(dburl1,"root","root");
+				String query1="insert into students_mr values(?,?)";
+				pstmt1=con.prepareStatement(query1);
+				pstmt1.setString(1, mobilenumber);
+				pstmt1.setString(2, per+"%");
+				pstmt1.executeUpdate();
+				out.print("Student Added");
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
 		} 
 		catch (SQLException e) {
 			e.printStackTrace();
