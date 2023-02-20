@@ -27,10 +27,10 @@ public class InsertServlet extends HttpServlet
 			String dburl="jdbc:mysql://localhost:3306/j2ee_db";
 			
 			con=DriverManager.getConnection(dburl,"root","root");
-			String query="insert into students_MR values(?,?)";
+			String query="update students_MR set percentage=? where mobilenumber=?";
 			pstmt=con.prepareStatement(query);
-			pstmt.setString(1, mobilenumber);
-			pstmt.setString(2, percentage+"%");
+			pstmt.setString(1, percentage+"%");
+			pstmt.setString(2, mobilenumber);
 			pstmt.executeUpdate();
 			out.print("MOCK RATING UPDATED!!");
 		}
